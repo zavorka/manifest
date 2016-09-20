@@ -8,30 +8,30 @@
            sync-j="4" />
 
   <remote name="hh-aosp"
-           fetch="ssh://git@github.com/HammerHead-AOSP/"
+           fetch="ssh://git@github.com"
            sync-c="true"
            revision="refs/heads/n" />
 
   <!-- CUSTOM REPO BEGIN -->
-  <project remote="hh-aosp" path="build" name="platform_build" groups="pdk,tradefed">
+  <project remote="hh-aosp" path="build" name="HammerHead-AOSP/platform_build" groups="pdk,tradefed">
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-  <project remote="hh-aosp" path="bionic" name="platform_bionic" groups="pdk" />
-  <project remote="hh-aosp" path="frameworks/base" name="platform_frameworks_base" groups="pdk-cw-fs,pdk-fs" />
-  <project remote="hh-aosp" path="packages/inputmethods/LatinIME" name="platform_packages_inputmethods_LatinIME" groups="pdk-fs" />
-  <project remote="hh-aosp" path="packages/apps/Browser" name="platform_packages_apps_Browser" groups="pdk-fs" />
-  <project remote="hh-aosp" path="packages/apps/Settings" name="platform_packages_apps_Settings" groups="pdk-fs" />
+  <project remote="hh-aosp" path="bionic" name="HammerHead-AOSP/platform_bionic" groups="pdk" />
+  <project remote="hh-aosp" path="frameworks/base" name="HammerHead-AOSP/platform_frameworks_base" groups="pdk-cw-fs,pdk-fs" />
+  <project remote="hh-aosp" path="packages/inputmethods/LatinIME" name="HammerHead-AOSP/platform_packages_inputmethods_LatinIME" groups="pdk-fs" />
+  <project remote="hh-aosp" path="packages/apps/Browser" name="HammerHead-AOSP/platform_packages_apps_Browser" groups="pdk-fs" />
+  <project remote="hh-aosp" path="packages/apps/Settings" name="HammerHead-AOSP/platform_packages_apps_Settings" groups="pdk-fs" />
 
-  <project remote="hh-aosp" path="hardware/qcom/audio" name="platform_hardware_qcom_audio" groups="qcom,qcom_audio" />
-  <project remote="hh-aosp" path="hardware/qcom/bt" name="platform_hardware_qcom_bt" groups="qcom" />
-  <project remote="hh-aosp" path="hardware/qcom/display" name="platform_hardware_qcom_display" groups="pdk,qcom,qcom_display" />
-  <project remote="hh-aosp" path="hardware/qcom/gps" name="platform_hardware_qcom_gps" groups="qcom,qcom_gps" />
-  <project remote="hh-aosp" path="hardware/qcom/keymaster" name="platform_hardware_qcom_keymaster" groups="qcom,qcom_keymaster" />
-  <project remote="hh-aosp" path="hardware/qcom/media" name="platform_hardware_qcom_media" groups="qcom" />
-  <project remote="hh-aosp" path="packages/providers/TelephonyProvider" name="platform_packages_providers_TelephonyProvider" groups="pdk-cw-fs,pdk-fs" />
-  <project remote="hh-aosp" path="packages/services/Telecomm" name="platform_packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" />
-  <project remote="hh-aosp" path="hardware/broadcom/wlan" name="platform_hardware_broadcom_wlan" groups="pdk,broadcom_wlan" />
-  <project remote="hh-aosp" path="external/chromium-webview" name="external_chromium-webview" groups="pdk" />
+  <project remote="hh-aosp" path="hardware/qcom/audio" name="HammerHead-AOSP/platform_hardware_qcom_audio" groups="qcom,qcom_audio" />
+  <project remote="hh-aosp" path="hardware/qcom/bt" name="HammerHead-AOSP/platform_hardware_qcom_bt" groups="qcom" />
+  <project remote="hh-aosp" path="hardware/qcom/display" name="HammerHead-AOSP/platform_hardware_qcom_display" groups="pdk,qcom,qcom_display" />
+  <project remote="hh-aosp" path="hardware/qcom/gps" name="HammerHead-AOSP/platform_hardware_qcom_gps" groups="qcom,qcom_gps" />
+  <project remote="hh-aosp" path="hardware/qcom/keymaster" name="HammerHead-AOSP/platform_hardware_qcom_keymaster" groups="qcom,qcom_keymaster" />
+  <project remote="hh-aosp" path="hardware/qcom/media" name="HammerHead-AOSP/platform_hardware_qcom_media" groups="qcom" />
+  <project remote="hh-aosp" path="packages/providers/TelephonyProvider" name="HammerHead-AOSP/platform_packages_providers_TelephonyProvider" groups="pdk-cw-fs,pdk-fs" />
+  <project remote="hh-aosp" path="packages/services/Telecomm" name="HammerHead-AOSP/platform_packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" />
+  <project remote="hh-aosp" path="hardware/broadcom/wlan" name="HammerHead-AOSP/platform_hardware_broadcom_wlan" groups="pdk,broadcom_wlan" />
+  <project remote="hh-aosp" path="external/chromium-webview" name="HammerHead-AOSP/external_chromium-webview" groups="pdk" />
   <!-- CUSTOM REPO END -->
 
   <!-- AOSP SOURCES BEGIN -->
